@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{blipblog}
+blipblog.
+\newblock https://www.take.net/blog/tecnologia/inteligenciaartificial/.
+
+\bibitem{norvig2002}
+P.~R. Norvig and S.~A. Intelligence.
+\newblock A modern approach.
+\newblock {\em Prentice Hall Upper Saddle River, NJ, USA: Rani, M., Nayak, R.,
+  \& Vyas, OP (2015). An ontology-based adaptive personalized e-learning
+  system, assisted by software agents on cloud storage. Knowledge-Based
+  Systems}, 90:33--48, 2002.
+
+\bibitem{Turing1950}
+A.~M. Turing.
+\newblock {Computing Machinery and intelligence}.
+\newblock {\em Mind}, 49(8):433--460, 1950.
+
+\bibitem{wikipediahumano}
+Wikipedia.
+\newblock https://pt.wikipedia.org/wiki/Humano.
+
+\bibitem{wikipediafourier}
+wikipedia.
+\newblock https://pt.wikipedia.org/wiki/TransformadadeFourier.
+
+\end{thebibliography}

@@ -35,9 +35,9 @@
 	citecolor=blue,
 	anchorcolor=blue,
 	breaklinks=true,
-	pdftitle={Aprendizagem de Máquina},
+	pdftitle={Aprendizagem de máquina básico: uma abordagem teórico-prática com Python},
 	pdfauthor={Giseldo Neo},
-	pdfsubject={Assunto do Documento},
+	pdfsubject={Aprendizagem de máquina básico: uma abordagem teórico-prática com Python},
 	pdfkeywords={aprendizagem de máquina},
 	pdfcreator={LaTeX},
 	pdfproducer={pdfTeX},
@@ -69,11 +69,36 @@
 }
 
 \author{Giseldo Neo}
-\title{Aprendizagem de máquina básico}
+\title{Aprendizagem de máquina básico: uma abordagem teórico-prática com Python}
 
 \begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			% Título
+			{\Huge\bfseries Aprendizagem de máquina básico: uma abordagem teórico-prática com Python}\\[1.5cm]
+			
+			% Imagem de capa (opcional)
+			\includegraphics[width=0.7\textwidth]{figuras/capa.png}\\[1cm]
+			
+			% Autor
+			{\Large Giseldo Neo (versao alpha 0.1)}\\[1cm]
+			
+			% Data
+			%{\large \today}\\[2cm]
+			
+			% Instituição (opcional)
+			%{\small versão alpha 0.1}
+		\end{center}
+	\end{titlepage}
+%\newpage
 
-\maketitle
+%{\large \today}\\[2cm]
+
+%{\small versão alpha 0.1}
+
+%\newpage
+%\maketitle
 \tableofcontents
 
 \chapter{Introdução}
@@ -146,7 +171,7 @@
 	
 	\subsection{Exemplo de AM}
 	
-	A seguir um exemplo de modelo preditivo em python. O modelo utiliza o algoritmo SVM e o conjunto de dados iris, que é um conjunto de dados conhecido e bastante utilizado como em demonstrações em outros livros e sites.
+	A seguir um exemplo de modelo preditivo em Python. O modelo utiliza o algoritmo SVM e o conjunto de dados iris, que é um conjunto de dados conhecido e bastante utilizado como em demonstrações em outros livros e sites.
 	
 	\begin{lstlisting}[language=Python, caption={Exemplo de código que usa AM}]
 		from sklearn import svm
