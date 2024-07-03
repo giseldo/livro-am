@@ -210,14 +210,14 @@
 	
 \chapter{Estatística Básica}
 	
-Um conjunto de dados geralmente é uma estrutura tabular com linhas e colunas, o nome da coluna é o identificador do dado (também chamado de variável) disposto naquela coluna. Cada linha da coluna é chamada de observação (ou registro), e representa uma instância daquele elemento. Por exemplo, uma tabela com dados do cliente é apresentado na Tabela~\ref{tbl:cliente}, a primeira linha (em negrito) é o nome da coluna, são elas: nome, endereço, telefone; cada linha abaixo do nome da coluna representa um cliente. Portanto a linha 1, teria o nome das 3 colunas; já a linha 2, teria um determinado cliente, e a linha 3, outro cliente.
+Um conjunto de dados geralmente é uma estrutura tabular com linhas e colunas, o nome da coluna é o identificador do dado (também chamado de variável) disposto naquela coluna. Cada linha da coluna é chamada de observação (ou registro), e representa uma instância daquele elemento. Por exemplo, uma tabela com dados do cliente é apresentado na Tabela~\ref{tbl:cliente}, a primeira linha (em negrito) é o nome da coluna, são elas: nome, endereço e telefone; cada linha abaixo do nome da coluna representa um cliente. Portanto a linha 1, teria o nome das 3 colunas; já a linha 2, teria um determinado cliente, e a linha 3, outro cliente.
 
 \begin{table}[!h]
 	\centering
 	\caption{Tabela cliente.}
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|l|l|c|}
 	\hline	
-	\textbf{nome} & \textbf{endereço} & \textbf{telefone} \\
+	\textbf{Nome} & \textbf{Endereço} & \textbf{Telefone} \\
 	\hline	
 	Giseldo Neo & Rua das alamedas, n 27, Corumbá MS & 222 66666 \\
 	\hline	
@@ -235,11 +235,11 @@ Utilizando uma classificação para esse tipo de variável, podemos definir qual
 
 \section{Tipo de variável}
 	
-Uma variável, em conceitos estatísticos, é uma característica do que foi observado naquele universo (amostra ou população). No nosso exemplo do cliente (Tabela~\ref{tbl:cliente}) é o nome, endereço e telefone. Ela é registrada em uma tabela após um processo de medição ou contagen do elemento observado. 
+Uma variável, em conceitos estatísticos, é uma característica do que foi observado naquele universo (amostra ou população) \cite{favero2017manual}. No nosso exemplo do cliente (Tabela~\ref{tbl:cliente}) as variáveis são: nome, endereço e telefone. Elas são registradas em uma tabela após um processo de medição ou contagen do elemento observado. 
 
 É útil definir de qual tipo é determinada variável, pois, existem técnicas adequadas a cada tipo para a análise estatítisca, para a elaboração de gráficos, para as técnicas de pré-processamento e para as técnicas de aprendizagem de máquina. 
 
-O tipo da variável, neste contexto, pode ser \textbf{quantitativo} ou \textbf{qualitativo} (veja a Figura~\ref{fig:tipodado}).
+O tipo da variável, neste contexto, pode ser \textbf{quantitativa} ou \textbf{qualitativa} (veja a Figura~\ref{fig:tipodado}).
 	
 \begin{figure}[!h]
 	\centering
@@ -297,7 +297,7 @@ A variável do tipo \textbf{quantitativa} é expressa geralmente como um número
 	O dado do tipo categórico ordinal também é um tipo especial, é quando ele faz parte de um conjunto com determinada ordem, por exemplo, imagine a classificação de altura de estudantes somente com os valores alto, médio e baixo. Nesse exemplo existe uma ordem, o aluno com altura classificado como baixo tem uma altura menor do que o aluno com altura média.
 	
 	
-\bibliographystyle{abbrv}
+\bibliographystyle{apalike}
 \bibliography{ref}
 	
 \end{document}

@@ -1,27 +1,34 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{blipblog}
+\bibitem[blipblog, ]{blipblog}
 blipblog.
 \newblock https://www.take.net/blog/tecnologia/inteligenciaartificial/.
 
-\bibitem{norvig2002}
-P.~R. Norvig and S.~A. Intelligence.
+\bibitem[F{\'a}vero and Belfiore, 2017]{favero2017manual}
+F{\'a}vero, L.~P. and Belfiore, P. (2017).
+\newblock {\em Manual de an{\'a}lise de dados: estat{\'\i}stica e modelagem
+  multivariada com Excel{\textregistered}, SPSS{\textregistered} e
+  Stata{\textregistered}}.
+\newblock Elsevier Brasil.
+
+\bibitem[Norvig and Intelligence, 2002]{norvig2002}
+Norvig, P.~R. and Intelligence, S.~A. (2002).
 \newblock A modern approach.
 \newblock {\em Prentice Hall Upper Saddle River, NJ, USA: Rani, M., Nayak, R.,
   \& Vyas, OP (2015). An ontology-based adaptive personalized e-learning
   system, assisted by software agents on cloud storage. Knowledge-Based
-  Systems}, 90:33--48, 2002.
+  Systems}, 90:33--48.
 
-\bibitem{Turing1950}
-A.~M. Turing.
+\bibitem[Turing, 1950]{Turing1950}
+Turing, A.~M. (1950).
 \newblock {Computing Machinery and intelligence}.
-\newblock {\em Mind}, 49(8):433--460, 1950.
+\newblock {\em Mind}, 49(8):433--460.
 
-\bibitem{wikipediahumano}
+\bibitem[Wikipedia, ]{wikipediahumano}
 Wikipedia.
 \newblock https://pt.wikipedia.org/wiki/Humano.
 
-\bibitem{wikipediafourier}
+\bibitem[wikipedia, ]{wikipediafourier}
 wikipedia.
 \newblock https://pt.wikipedia.org/wiki/TransformadadeFourier.
 

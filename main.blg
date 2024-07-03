@@ -1,48 +1,52 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: abbrv.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
 Database file #1: ref.bib
-You've used 5 entries,
-            2118 wiz_defined-function locations,
-            521 strings with 4290 characters,
-and the built_in function-call counts, 1199 in all, are:
-= -- 110
-> -- 41
-< -- 0
+Warning--empty year in blipblog
+Warning--empty year in wikipediahumano
+Warning--empty year in wikipediafourier
+You've used 6 entries,
+            1935 wiz_defined-function locations,
+            500 strings with 4486 characters,
+and the built_in function-call counts, 1780 in all, are:
+= -- 179
+> -- 54
+< -- 6
 + -- 18
-- -- 12
-* -- 60
-:= -- 201
-add.period$ -- 12
-call.type$ -- 5
-change.case$ -- 18
-chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 43
-empty$ -- 118
-format.name$ -- 12
-if$ -- 248
-int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 2
-newline$ -- 25
-num.names$ -- 10
-pop$ -- 41
+- -- 16
+* -- 125
+:= -- 330
+add.period$ -- 15
+call.type$ -- 6
+change.case$ -- 34
+chr.to.int$ -- 6
+cite$ -- 9
+duplicate$ -- 72
+empty$ -- 126
+format.name$ -- 26
+if$ -- 337
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 30
+num.names$ -- 18
+pop$ -- 40
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 38
 quote$ -- 0
-skip$ -- 36
+skip$ -- 48
 stack$ -- 0
-substring$ -- 70
-swap$ -- 5
+substring$ -- 118
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 14
-width$ -- 6
-write$ -- 45
+type$ -- 34
+warning$ -- 3
+while$ -- 16
+width$ -- 0
+write$ -- 67
+(There were 3 warnings)
