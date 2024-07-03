@@ -1,4 +1,9 @@
 \documentclass[a4paper,12pt]{book}
+
+%\usepackage{syntonly}
+
+%\syntaxonly
+
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 \usepackage{geometry}
@@ -9,6 +14,9 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
 
 \setlist[itemize]{itemsep=0pt}
 
@@ -73,22 +81,20 @@
 
 \begin{document}
 	
+	\newcommand{\titlepagecolor}{cyan!20}
+	
 	\begin{titlepage}
+		
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[\titlepagecolor] (current page.south west) rectangle (current page.north east);
+		\end{tikzpicture}
+		
 		\begin{center}
-			% Título
 			{\Huge\bfseries Aprendizagem de máquina básico: uma abordagem teórico-prática com Python}\\[1.5cm]
 			
-			% Imagem de capa (opcional)
-			\includegraphics[width=0.7\textwidth]{figuras/capa.png}\\[1cm]
+			\includegraphics[width=0.95\textwidth]{figuras/capa_livro.png}\\[1cm]
 			
-			% Autor
-			{\Large Giseldo Neo (versao alpha 0.1)}\\[1cm]
-			
-			% Data
-			%{\large \today}\\[2cm]
-			
-			% Instituição (opcional)
-			%{\small versão alpha 0.1}
+			{\Large Giseldo Neo (versao alpha 0.1)}\\[1cm]	
 		\end{center}
 	\end{titlepage}
 %\newpage
@@ -199,24 +205,49 @@
 	%	hello_world()
 	%\end{lstlisting}
 	
-	\chapter{Estatística Básica}
+\chapter{Estatística Básica}
 	
-	\section{Tipo do Dado}
+Um conjunto de dados geralmente é uma estrutura tabular com linhas e colunas, o nome da coluna é o identificador do dado (também chamado de variável) disposto naquela coluna. Cada linha da coluna é chamada de observação (ou registro), e representa uma instância daquele elemento. Por exemplo, uma tabela com dados do cliente é apresentado na Tabela~\ref{tbl:cliente}, a primeira linha (em negrito) é o nome da coluna, são elas: nome, endereço, telefone; cada linha abaixo do nome da coluna representa um cliente. Portanto a linha 1, teria o nome das 3 colunas; já a linha 2, teria um determinado cliente, e a linha 3, outro cliente.
+
+\begin{table}[!h]
+	\centering
+	\caption{Tabela cliente.}
+	\begin{tabular}{|c|c|c|}
+	\hline	
+	\textbf{nome} & \textbf{endereço} & \textbf{telefone} \\
+	\hline	
+	Giseldo Neo & Rua das alamedas, n 27, Corumbá MS & 222 66666 \\
+	\hline	
+	Alex Neo & Avenida Fernandes 325, Macieó, AL& 333 6589 \\
+	\hline
+	\end{tabular}
+	\label{tbl:cliente}	
+\end{table}		
+
+Em resumo, a Tabela~\ref{tbl:cliente} apresenta 2 observações (ou registros) de clientes. A primeira coluna é uma descrição das informações que existirão naquela coluna, por exemplo ``nome'' significa que provavelmente todos os dados dessa coluna são referentes ao nome de determinado cliente, já cada linha abaixo da primeira linha são os dados de um cliente em específico. 
+
+Quando vamos realizar um resumo estatístico (tal como média, mediana ou moda), ou algum gráfico, ou alguma inferência estatística mesmo vamos executar nossos modelos preditivos, temos que conhecer o tipo teórico, daquele dado (ou variável, ou coluna) para podermos selecionar qual a técnica mais adequada que devemos aplicar. Por exemplo, em nenhuma das colunas da tabela cliente devemos calcular a média. 
+
+Utilizando uma classificação para esse tipo de variável, podemos definir qual é o tipo possível de operação. Portanto, vamos acrescentar mais uma informação (teórica) a coluna da tabela para que possamos claramente definir o que deve, ou pode ser feito com ela, chamamos essa informação de tipo de dado, ou tipo de variável, que é o termo mais usado. 
+
+\section{Tipo de variável}
 	
-	É necessário classificar o tipo do dado pois os algoritmos de aprendizagem de máquina irão funcionar com determinados tipos. Com o conhecimento do tipo do dado que estamos lidando poderemos realizar as conversões necessárias. 
+Uma variável, em conceitos estatísticos, é uma característica do que foi observado naquele universo (amostra ou população). No nosso exemplo do cliente (Tabela~\ref{tbl:cliente}) é o nome, endereço e telefone. Ela é registrada em uma tabela após um processo de medição ou contagen do elemento observado. 
+
+É útil definir de qual tipo é determinada variável, pois, existem técnicas adequadas a cada tipo para a análise estatítisca, para a elaboração de gráficos, para as técnicas de pré-processamento e para as técnicas de aprendizagem de máquina. 
+
+O tipo da variável, neste contexto, pode ser \textbf{quantitativo} ou \textbf{qualitativo} (veja a Figura~\ref{fig:tipodado}).
 	
-	O tipo do dado pode ser \textbf{numérico} ou \textbf{categórico} (veja a Figura~\ref{fig:tipodado}).
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figuras/tipo_variavel.png}
+	\caption{Tipo de dado}
+	\label{fig:tipodado}
+\end{figure}
 	
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[width=0.7\linewidth]{figuras/tipo_do_dado.png}
-		\caption{Tipo de dado}
-		\label{fig:tipodado}
-	\end{figure}
+A variável do tipo \textbf{quantitativa} é expressa geralmente como um número inteiro ou real. Porém, existem casos em que números inteiros yambém expressam dados do tipo qualitativo, cada caso deve ser analisado. Já a variável do tipo \textbf{quantitativa} está relacionado a [..]. 
 	
-	Dado do tipo \textbf{numérico} é expresso geralmente como um número inteiro ou real. Porém existem casos em que números inteiros expressam dados categóricos. Já o dado do tipo \textbf{categórico} está relacionado a uma classificação do dado. 
-	
-	\subsection{Dado Numérico}
+\subsection{Dado quantitativo}
 	
 	Já sabemos que um dado do tipo \textbf{numérico} é expresso geralmente como um número inteiro ou real. Além disso, esse tipo de dado ainda pode ser subclassificado em \textbf{contínuo} ou \textbf{discreto} (veja na Figura~\ref{fig:tipodadonumerico}). 
 	
@@ -242,11 +273,8 @@
 		>>> type(idade)
 		<class 'int'>
 	\end{lstlisting}
-	
-	
-	
-	
-	\subsection{Dado Categórico}
+		
+	\subsection{Dado qualitativo}
 	
 	Um dado é do tipo categórico quando ele faz parte de um conjunto, de uma classe ou de uma categoria.
 	
