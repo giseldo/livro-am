@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.25)  4 JUL 2024 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.25)  4 JUL 2024 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -606,13 +606,40 @@ Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks36
 \verbatim@in@stream=\read4
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
-Package hyperref Info: Option `breaklinks' set `true' on input line 52.
+(C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen267
+\captionmargin=\dimen268
+\caption@leftmargin=\dimen269
+\caption@rightmargin=\dimen270
+\caption@width=\dimen271
+\caption@indent=\dimen272
+\caption@parindent=\dimen273
+\caption@hangindent=\dimen274
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count312
+\c@continuedfloat=\count313
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+(C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count314
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count315
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
+Package hyperref Info: Option `breaklinks' set `true' on input line 53.
 
 (C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
 File: l3backend-pdftex.def 2024-04-11 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
+\l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box65
 ) (main.aux
 
@@ -621,24 +648,24 @@ LaTeX Warning: Label `fig:mensuracao' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -674,7 +701,7 @@ LaTeX Font Info:    ... okay on input line 78.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 79.
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -683,16 +710,16 @@ Package hyperref Info: Link coloring ON on input line 78.
 (C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen267
+\scratchcounter=\count317
+\scratchdimen=\dimen275
 \scratchbox=\box66
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count318
+\nofMParguments=\count319
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen268
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen276
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
 \everyMPtoPDFconversion=\toks38
 )
 (C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -705,18 +732,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count319
-<figuras/capa2.jpg, id=42, 1027.84pt x 1027.84pt>
+\c@lstlisting=\count323
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<figuras/capa2.jpg, id=38, 1027.84pt x 1027.84pt>
 File: figuras/capa2.jpg Graphic file (type jpg)
 <use figuras/capa2.jpg>
-Package pdftex.def Info: figuras/capa2.jpg  used on input line 90.
+Package pdftex.def Info: figuras/capa2.jpg  used on input line 91.
 (pdftex.def)             Requested size: 441.01773pt x 441.02158pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 95.
+(Font)              <10.95> on input line 96.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 95.
+(Font)              <8> on input line 96.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 95.
+(Font)              <6> on input line 96.
  [1
 
 
@@ -734,78 +763,74 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Cap\'{\i }tulo 1.
-
-Overfull \hbox (0.17593pt too wide) in paragraph at lines 113--114
-[]\OT1/cmr/m/n/12 Al^^Sem disso, ``in-te-lig^encia'' e ``ar-ti-fi-cial'' s~ao p
-a-la-vras que t^em sig-ni-fi-cado impl^^S^^Pcito
- []
-
 [5]
-<figuras/expert.jpg, id=88, 411.03563pt x 352.31625pt>
+<figuras/jhon_macharthy.png, id=82, 379.4175pt x 530.73282pt>
+File: figuras/jhon_macharthy.png Graphic file (type png)
+<use figuras/jhon_macharthy.png>
+Package pdftex.def Info: figuras/jhon_macharthy.png  used on input line 129.
+(pdftex.def)             Requested size: 99.2283pt x 138.7971pt.
+<figuras/alan_turing.png, id=84, 268.75406pt x 356.83313pt>
+File: figuras/alan_turing.png Graphic file (type png)
+<use figuras/alan_turing.png>
+Package pdftex.def Info: figuras/alan_turing.png  used on input line 136.
+(pdftex.def)             Requested size: 99.2283pt x 131.74849pt.
+<figuras/expert.jpg, id=86, 411.03563pt x 352.31625pt>
 File: figuras/expert.jpg Graphic file (type jpg)
 <use figuras/expert.jpg>
-Package pdftex.def Info: figuras/expert.jpg  used on input line 125.
+Package pdftex.def Info: figuras/expert.jpg  used on input line 148.
 (pdftex.def)             Requested size: 308.71106pt x 264.60747pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
+ [6 <./figuras/jhon_macharthy.png> <./figuras/alan_turing.png>]
 <figuras/ia.png, id=99, 809.0225pt x 279.0425pt>
 File: figuras/ia.png Graphic file (type png)
 <use figuras/ia.png>
-Package pdftex.def Info: figuras/ia.png  used on input line 140.
+Package pdftex.def Info: figuras/ia.png  used on input line 163.
 (pdftex.def)             Requested size: 396.91325pt x 136.90233pt.
-
-[7 <./figuras/expert.jpg> <./figuras/ia.png>]
-<figuras/exemplos_am.png, id=110, 843.15pt x 754.31813pt>
+<figuras/exemplos_am.png, id=101, 843.15pt x 754.31813pt>
 File: figuras/exemplos_am.png Graphic file (type png)
 <use figuras/exemplos_am.png>
-Package pdftex.def Info: figuras/exemplos_am.png  used on input line 149.
+Package pdftex.def Info: figuras/exemplos_am.png  used on input line 172.
 (pdftex.def)             Requested size: 308.71106pt x 276.19283pt.
-<figuras/indutivo.png, id=111, 1069.9975pt x 279.0425pt>
+ [7 <./figuras/expert.jpg>] [8 <./figuras/ia.png> <./figuras/exemplos_am.png>]
+<figuras/indutivo.png, id=115, 1069.9975pt x 279.0425pt>
 File: figuras/indutivo.png Graphic file (type png)
 <use figuras/indutivo.png>
-Package pdftex.def Info: figuras/indutivo.png  used on input line 160.
+Package pdftex.def Info: figuras/indutivo.png  used on input line 183.
 (pdftex.def)             Requested size: 441.01773pt x 115.01277pt.
- [8 <./figuras/exemplos_am.png> <./figuras/indutivo.png>]
+
 (C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 173.
+nput line 196.
 
-[9] [10
+[9 <./figuras/indutivo.png>] [10]
+Cap\'{\i }tulo 2.
+[11
 
 ]
-Cap\'{\i }tulo 2.
-[11]
-Overfull \hbox (4.39256pt too wide) in paragraph at lines 232--233
+Overfull \hbox (4.39256pt too wide) in paragraph at lines 255--256
 []\OT1/cmr/m/n/12 Neste con-texto, uma vari^^Savel pode ser \OT1/cmr/bx/n/12 qu
 an-ti-ta-tiva \OT1/cmr/m/n/12 ou \OT1/cmr/bx/n/12 qua-li-ta-tiva \OT1/cmr/m/n/1
 2 (Fi-gura [][]2.1[][]).
  []
 
 
-Overfull \hbox (14.89801pt too wide) in paragraph at lines 269--270
+Overfull \hbox (14.89801pt too wide) in paragraph at lines 292--293
 []\OT1/cmr/m/n/12 Para exem-pli-fi-car, ti-pi-fi-ca-re-mos (ou clas-si-fi-ca-re
 -mos) as vari^^Saveis (ou ca-rac-ter^^S^^Psticas)
  []
 
 [12]
-Overfull \hbox (31.93767pt too wide) in paragraph at lines 323--325
+Overfull \hbox (31.93767pt too wide) in paragraph at lines 346--348
  [][] 
  []
 
 
-Overfull \hbox (23.40176pt too wide) in paragraph at lines 355--357
+Overfull \hbox (23.40176pt too wide) in paragraph at lines 378--380
  [][] 
  []
 
-[13]
-Underfull \vbox (badness 1354) has occurred while \output is active []
-
- [14]
-(main.bbl [15] [16
+[13] [14] (main.bbl [15] [16
 
 ]) [17] (main.aux)
  ***********
@@ -816,41 +841,31 @@ L3 programming layer <2024-04-11>
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 51DF5F826B1AB3C2EF644D0BC47F800D;1215
-(rerunfilecheck)             After:  9C5230D8795F2E38D6DE3871732AE55E;1071.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5C28F04BF389F18B92ED932BD81D83E7;1132.
  ) 
 Here is how much of TeX's memory you used:
- 22931 strings out of 474369
- 423514 string characters out of 5740986
- 1978754 words of memory out of 5000000
- 44922 multiletter control sequences out of 15000+600000
+ 24369 strings out of 474369
+ 451813 string characters out of 5740986
+ 1979754 words of memory out of 5000000
+ 46352 multiletter control sequences out of 15000+600000
  565595 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,87p,899b,1334s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
- <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti120
-0.pk> <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm0800.pk><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/gigi/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gigi/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/gigi/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gigi/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (17 pages, 2810938 bytes).
+ 84i,9n,87p,899b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1
+200.pk> <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm0800.pk><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/gigi/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gigi/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/gigi/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gigi/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (17 pages, 3747462 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
