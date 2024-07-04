@@ -216,31 +216,35 @@ Um conjunto de dados geralmente é uma estrutura tabular com linhas e colunas, o
 
 Em resumo, a Tabela~\ref{tbl:cliente} apresenta 2 observações (ou registros) de clientes. A primeira coluna é uma descrição das informações que existirão naquela coluna, por exemplo ``nome'' significa que provavelmente todos os dados dessa coluna são referentes ao nome de determinado cliente, já cada linha abaixo da primeira linha são os dados de um cliente em específico.
 
-Quando vamos realizar um resumo estatístico (tal como média, mediana ou moda), ou algum gráfico, ou alguma inferência estatística mesmo vamos executar nossos modelos preditivos, temos que conhecer o tipo teórico, daquele dado (ou variável, ou coluna) para podermos selecionar qual a técnica mais adequada que devemos aplicar. Por exemplo, em nenhuma das colunas da tabela cliente devemos calcular a média.
+Quando vamos realizar um resumo estatístico (tal como média, mediana ou moda), ou algum gráfico, ou alguma inferência estatística, ou rodar um modelo preditivo, temos que conhecer o tipo teórico, daquele dado (ou variável, ou coluna) para podermos selecionar qual a técnica mais adequada que devemos aplicar. Por exemplo, em nenhuma das colunas da tabela cliente devemos calcular a média. Qual é a média, do nome? ou a média do endereço, ou a média do telefone? Não faz sentido.
 
 Utilizando uma classificação para esse tipo de variável, podemos definir qual é o tipo possível de operação. Portanto, vamos acrescentar mais uma informação (teórica) a coluna da tabela para que possamos claramente definir o que deve, ou pode ser feito com ela, chamamos essa informação de tipo de dado, ou tipo de variável, que é o termo mais usado.
 
+Conhecendo estes tipo e sua aplicação correta não cometeremos o erro de por exemplo, calcular a média de uma variável do tipo qualitativa ordinal. Além disso, é interessante reportar nos estudos científicos (artigos) uma tabela com o tipo das variáveis utilizado, pois isso facilita muito o entendimento do conjunto dos dados para o leitor interessado, caso o artigo tenha utilizado um conjunto de dados.
+
 \section{Variável}
 
-Uma variável, em conceitos estatísticos, é uma característica do que foi observado naquele universo (amostra ou população), que foi medida,  contada, ou categorizada \cite{favero2017manual}. No nosso exemplo do cliente (Tabela~\ref{tbl:cliente}) as variáveis são: nome, endereço e telefone. Elas foram registradas na tabela após esse processo de medição/contagem/categorização. Por exemplo, medimos a altura de uma pessoa e registramos isso em uma tabela, a altura é então chamada genericamente de variável.
+Uma variável, em conceitos estatísticos, é uma característica do que foi observado naquele universo (amostra ou população), que foi medida,  contada, ou categorizada \cite{favero2017manual}. No nosso exemplo do cliente (Tabela~\ref{tbl:cliente}) as variáveis são: nome, endereço e telefone. Elas foram registradas na tabela após um desses processos de mensuração, contagem ou categorização. Por exemplo, medimos a altura de uma pessoa e registramos isso em uma tabela, a altura é então chamada genericamente de variável.
 
-É útil definir de qual tipo é determinada variável, pois, existem técnicas adequadas para cada tipo. Para realizar uma análise estatística, uma elaboração de gráficos, uma técnica de pré-processamento ou criar um modelo preditivo é necessário entender de qual tipo é cada variável. Por isso, conheceremos as duas principais classificações. Neste contexto, uma variável pode ser \textbf{quantitativa} ou \textbf{qualitativa} (veja a Figura~\ref{fig:tipodado}).
+É útil definir de qual tipo é determinada variável, pois, existem técnicas adequadas para cada tipo. Para realizar uma análise estatística descritiva, elaborar um gráfico para um artigo científico, ou aplicar uma técnica de pré-processamento em um modelo preditivo é necessário entender de qual tipo é cada variável, pois existem determinadas técnicas para determinados fins. Por isso, vamos entender estas classificações teóricas.
+
+Neste contexto, uma variável pode ser \textbf{quantitativa} ou \textbf{qualitativa} (Figura~\ref{fig:tipodado}). Além disso, uma variável quantitativa também é chamada de métrica, e a variável qualitativa de não métrica ou categórica \cite{favero2017manual}.
 
 \begin{figure}
 	\centering
 	\caption{Classificação da variável}
 	\begin{tikzpicture}
 		\draw
-		node[draw] at (0,2) (tipo) {Tipo da variável}
-		node[draw] at (-3,0) (quan) {Quantitativo}
-		node[draw] at (3,0) (quali) {Qualitativo};
+		node[draw] at (0,2) (tipo) {Variável}
+		node[draw] at (-3,0) (quan) {Quantitativa}
+		node[draw] at (3,0) (quali) {Qualitativa};
 		\draw[->] (tipo) -- (quan);
 		\draw[->] (tipo) -- (quali);
 	\end{tikzpicture}
 	\label{fig:tipodado}
 \end{figure}
 
-A variável quantitativa é expressa geralmente como um número. Porém, existem casos em que números também expressam variáveis qualitativas, logo cada caso deve ser analisado individualmente. Já a variável do tipo qualitativa está relacionado ao pertencimento do valor mensurado a um universo, um exempo de variável qualitativa é o estado civil do cliente, que pode ser solteiro ou casado. Portanto, vamos atualizar nossa tabela de cliente com duas novas variáveis, estado civil e altura, assim teremos mais variáveis para trabalhar (Tabela~\ref{tbl:cliente_v2}).
+A variável quantitativa é expressa geralmente como um número. Porém, existem casos em que números também expressam variáveis qualitativas, logo cada caso deve ser analisado individualmente. Já a variável do tipo qualitativa está relacionado ao pertencimento do valor mensurado a um universo. Um exemplo de variável qualitativa é o estado civil do cliente, que pode ser solteiro ou casado. Para continuarmos, vamos atualizar nossa tabela de cliente com duas novas variáveis, estado civil e altura, assim teremos variáveis dos tipos qualitativa e quantitativas  na mesma tabela, o que é bem comum (Tabela~\ref{tbl:cliente_v2}).
 
 \begin{table}
 	\centering
@@ -261,7 +265,7 @@ A variável quantitativa é expressa geralmente como um número. Porém, existem
 	\label{tbl:cliente_v2}
 \end{table}
 
-Para exemplificar, tipificaremos (ou classificaremos) as variáveis para a tabela de cliente. Logo, criamos outra tabela para registrar estes dados sobre as variáveis (se quantitativo ou qualitativo). Veja na Tabela~\ref{tbl:clienteclassificacao} o resultado dessa classificação/tipificação, para cada variável informamos se ela é qualitativa ou quantitativa.
+Para exemplificar, tipificaremos (ou classificaremos) as variáveis (ou  características) que foram medidas, contadas (com determinado grau de precisão) ou categorizadas dos clientes em uma outra tabela para registrar estes dados sobre as variáveis (se quantitativo ou qualitativo). Veja na Tabela~\ref{tbl:clienteclassificacao} o resultado dessa tipificação, para cada variável informamos se a variável é qualitativa ou quantitativa na segunda coluna, já na primeira coluna temos o nome da variável.
 
 \begin{table}
 	\centering
@@ -284,64 +288,124 @@ Para exemplificar, tipificaremos (ou classificaremos) as variáveis para a tabel
 	\label{tbl:clienteclassificacao}
 \end{table}
 
-Além disso, uma variável quantitativa também é chamada de \textbf{métrica} , e a quantitativa de \textbf{não métrica} ou \textbf{categórica} \cite{favero2017manual}. No entanto, ainda temos uma subclassificação relacionada as \textbf{escalas de mensuração} das variáveis, \textbf{intervalar} e \textbf{razão} para as variáveis quantitativas e \textbf{nominal} e \textbf{ordinal} para as variáveis qualitativas. Veja na Figura~\ref{fig:mensuracao}, o tipo das variáveis e as escalas de mensuração de cada tipo.
-
-Além das escalas de mensuração, temos as \textbf{escalas de categorias} e as \textbf{escalas de precisão}. A escala de categoria pode ser \textbf{binária} ou \textbf{policotômica} para uma variável qualitativa, e para a escala de precisão podem se \textbf{discreta} ou \textbf{contínua
-}, para a variável quantitativa.
+No entanto, ainda temos uma outra classificação das variáveis, relacionada as \textbf{escalas}. As escalas são 3: \textbf{mensuração}, \textbf{precisão} (da contagem) e \textbf{categorização}. As opções da escala mensuração são: \textbf{intervalar} e \textbf{razão} para as variáveis quantitativas e \textbf{nominal} e \textbf{ordinal} para as variáveis qualitativas. Veja na Figura~\ref{fig:mensuracao}, o tipo das variáveis e as escalas de mensuração de cada tipo. Além das escalas de mensuração, temos as escalas de precisão e as escalas de categorização. A escala de precisão é utilizada somente nas variáveis quantitativas com as opções \textbf{discreta} ou \textbf{contínua}. Já a escala de categorização é utilizada somente em variáveis qualitativas, suas opções são \textbf{binária} ou \textbf{policotômica}.
 
 \begin{figure}
-	\caption{Escala de mensuração dos tipos \textbf{quantitativo} e \textbf{qualitativo}}
+	\caption{Escala da variável}
 	\centering
 	\begin{tikzpicture}
 		\draw
-		node[draw] at (0,2) (tipo) {Tipo da variável}
-		node[draw] at (-3,0) (quan) {Quantitativo}
-		node[draw] at (5,0) (quali) {Qualitativo}
-		node[draw] at (-6,-2) (int) {Intervalar}
-		node[draw] at (0,-2) (raz) {Razão}
-		node[draw] at (8,-2) (nom) {Nominal}
-		node[draw] at (2,-2) (ord) {Ordinal};
-		\draw[->] (tipo) -- (quan);
-		\draw[->] (tipo) -- (quali);
-		\draw[->] (quan) -- (raz);
-		\draw[->] (quan) -- (int);
-		\draw[->] (quali) -- (ord);
-		\draw[->] (quali) -- (nom);
-	\end{tikzpicture}
+		node[draw] at (0,2) (esc) {Escala}
+		node[draw, red] at (-6,0) (men) {Mensuração}
+		node[draw, blue] at (0,0) (pre) {Precisão (da contagem)}
+		node[draw, green] at (4,0) (cat) {Categorização}
+		node[draw, red] at (-9,-2) (int) {Intervalar}
+		node[draw, red] at (-7,-2) (raz) {Razão}
+		node[draw, red] at (-5,-2) (nom) {Nominal}
+		node[draw, red] at (-3,-2) (ord) {Ordinal}
+		node[draw, blue] at (-1,-2) (dis) {Discreta}
+		node[draw, blue] at (1,-2) (con) {Contínua}
+		node[draw, green] at (3,-2) (bin) {Binária}
+		node[draw, green] at (5.3,-2) (pol) {Policotômica}
+		[->] (esc) -- (men)
+		[->] (esc) -- (pre)
+		[->] (esc) -- (cat)
+		[->] (esc) -- (men)
+		[->] (men) -- (int)
+		[->] (men) -- (raz)
+		[->] (men) -- (nom)
+		[->] (men) -- (ord)
+		[->] (pre) -- (dis)
+		[->] (pre) -- (con)
+		[->] (cat) -- (bin)
+		[->] (cat) -- (pol);
+\end{tikzpicture}
 	\label{fig:mensuracao}
 \end{figure}
 
+
+
 \begin{figure}
-	\caption{Escala de categoria e precisão dos tipos \textbf{quantitativo} e \textbf{qualitativo}}
+	\caption{Escala de \textcolor{red}{mensuração}, \textcolor{blue}{precisão} e \textcolor{green}{categorização} das variáveis quantitativa e qualitativa}
 	\centering
 	\begin{tikzpicture}
 		\draw
 		node[draw] at (0,2) (tipo) {Variável}
 		node[draw] at (-3,0) (quan) {Quantitativa}
-		node[draw] at (5,0) (quali) {Qualitativa}
-		node[draw] at (-6,-2) (dis) {Discreta}
-		node[draw] at (0,-2) (con) {Continua}
-		node[draw] at (7,-2) (bin) {Binaria}
-		node[draw] at (3,-2) (pol) {Policotômica};
-		\draw[->] (tipo) -- (quan);
-		\draw[->] (tipo) -- (quali);
-		\draw[->] (quan) -- (dis);
-		\draw[->] (quan) -- (con);
-		\draw[->] (quali) -- (bin);
-		\draw[->] (quali) -- (pol);
+		node[draw] at (5,0) (qual) {Qualitativa}
+		node[draw, red] at (-6,-2) (int) {Intervalar}
+		node[draw, red] at (-4,-2) (raz) {Razão}
+		node[draw, blue] at (-2.1,-2) (dis) {Discreta}
+		node[draw, blue] at (0,-2) (con) {Continua}
+		node[draw, red] at (4,-2) (nom) {Nominal}
+		node[draw, red] at (2,-2) (ord) {Ordinal}
+		node[draw, green] at (5.8,-2) (bin) {Binaria}
+		node[draw, green] at (8,-2) (pol) {Policotômica}
+		[->] (tipo) -- (quan)
+		[->] (tipo) -- (qual)
+		[->] (quan) -- (dis)
+		[->] (quan) -- (con)
+		[->] (qual) -- (bin)
+		[->] (qual) -- (pol)
+		[->] (quan) -- (raz)
+		[->] (quan) -- (int)
+		[->] (qual) -- (ord)
+		[->] (qual) -- (nom);
 	\end{tikzpicture}
 	\label{fig:mensuracao}
 \end{figure}
 
+Portanto se a variável for quantitativa ela somente poderá ser ou intervalar ou razão, além disso, discreta ou continua. Se ela for qualitativa, ela poderá ser ordinal ou nominal, também  binaria ou policotônica. Em outras palavras ela só terá duas dessas classificações de escala, se estivessemos lidando com cores, bastaria escolher uma opção da cor vermelha e uma da cor azul, se for quantitativa, e uma da cor vermelha e outra da cor verde se qualitativa. A Tabela~\ref{tbl:clienteclassificacaoescala} está atualizada com essa classificação.
 
+\begin{table}
+	\centering
+	\caption{Classificação das variáveis, agora com as escalas.}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da variável} &\textbf{Classificação} \\
+		\hline
+		Nome & qualitativa, nominal e policotômica  \\
+		\hline
+		Endereço & qualitativa, nominal e policotômica  \\
+		\hline
+		Telefone & qualitativa, nominal e policotômica \\
+		\hline
+		Estado Civil & qualitativa, nominal e binaria \\
+		\hline
+		Altura & quantitativa, intervalar e continua \\
+		\hline
+	\end{tabular}
+	\label{tbl:clienteclassificacaoescala}
+\end{table}
 
 \subsection{Quantitativa}
 
-	Já sabemos que um dado do tipo quantitativo ou numérico é expresso geralmente como um número, e pode ser quanto a sua escala de mensuração, intervalar ou real. Além disso, esse tipo de dado ainda pode ser subclassificado em relação a sua escala de precisão como contínuo ou discreto.
+Já sabemos que uma variável quantitativa é expressa geralmente (mas nem sempre) como um número, e pode ser quanto a sua escala de mensuração, intervalar ou razão. Além disso, essa variável ainda pode ser classificada em relação a sua escala de precisão, contínuo ou discreto.
 
-	Um dado \textbf{numérico contínuo} é quando o dado pode ser qualquer número em um intervalo de numero reais - lembrando que o conjunto de número reais engloba os números inteiros. Geralmente é o resultado de uma medida, por exemplo, a altura dos estudantes é um dado do tipo numérico contínuo.
+Sabendo que a variável é quantitativa podemos utilizar as medidas estatísticas de posição ou localização, tais como, média, mediana, moda, quartis, decis e percentis. Também podemos utilizar as medidas de dispersão, tais como, amplitude, desvio padrão, erro-padrão e coeficiente de variação. Além disso, para uma representação visual dos gráficos podemos utilizar os gráficos do tipo linha, dispersão, histograma, ramo-e-folhas e boxplot, por fim as medidas de forma como assimetria e curtose também podem ser utilizadas\cite{favero2017manual}.
 
-	O dado numérico discreto geralmente é resultado de uma contagem - um número inteiro. Por exemplo, a idade é uma contagem de anos do estudante, logo é um dado do tipo \textbf{numérico discreto}.
+\subsubsection{Escala de precisão: Quantitativa contínua}
+
+A  variável quantitativa, com escala de precisão contínua, é quando ela possui um intervalo de domínio dos números reais. Lembrando que o conjunto de número reais engloba os números inteiros. Geralmente essa variável é o resultado de uma medida, por exemplo, a altura dos estudantes é um dado do tipo quantitativo contínuo.
+
+Vamos criar em Python uma tabela (chamado de DataFrame) que tem uma única coluna (variável) do tipo quantitativa continua. Porém, as linguagens (Python, R) ou as ferramentas estatísticas visuais (tais como: SPSS, JASP ou Jamovi), não são obrigadas a ter um equivalente dessa tipologia teórica, isso depende do contexto do dado, da interpretação humana do que aquela variável representa. No código a seguir criamos uma tabela com uma única coluna. Classificamos então ela em relação a escala de precisão (da contagem) como continua. Em programação o termo variável é utilizado para um fim diferente, porém nesse capítulo, quando falamos de variável estamos nos referindo a coluna da tabela.
+
+\begin{lstlisting}[language=Python, caption={Código que cria e exibe uma tabela em python com uma variável quantitativa continua.}]
+>>> import pandas as pd
+>>> dados = [1.80, 1.70, 1.50, 1.79]
+>>> df = pd.DataFrame(data=dados, columns=['altura'])
+>>> df
+   altura
+0    1.80
+1    1.70
+2    1.50
+3    1.79
+>>>
+\end{lstlisting}
+
+\subsubsection{Escala de precisão: Quantitativa discreto}
+
+O dado numérico discreto geralmente é resultado de uma contagem - um número inteiro. Por exemplo, a idade é uma contagem de anos do estudante, logo é um dado do tipo \textbf{numérico discreto}.
 
 	Por exemplo, a idade de um estudante é um dado do tipo \textbf{numérico discreto}.
 
@@ -359,14 +423,7 @@ Além das escalas de mensuração, temos as \textbf{escalas de categorias} e as 
 
 	Um dado é do tipo categórico quando ele faz parte de um conjunto, de uma classe ou de uma categoria.
 
-	O dado categórico pode ser binário ou ordinal, ou nenhuma das duas subcategorias (Figura~\ref{fig:categoricossubtipos}).
-
-	\begin{figure}
-		\centering
-		\includegraphics[width=1\linewidth]{figuras/tipo_do_dado_categorico.png}
-		\caption{Subtipos Categórico}
-		\label{fig:categoricossubtipos}
-	\end{figure}
+	O dado categórico pode ser binário ou ordinal, ou nenhuma das duas subcategorias.
 
 	Um exemplo de dado categórico, é uma lista com as cores preferidas dos estudantes, ou o estado civil de uma pessoa.
 
