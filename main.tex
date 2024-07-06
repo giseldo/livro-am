@@ -280,9 +280,9 @@ Neste contexto, uma variável pode ser \textbf{quantitativa} ou \textbf{qualitat
 	\caption{Classificação da variável}
 	\begin{tikzpicture}
 		\draw
-		node[draw] at (0,2) (tipo) {Variável}
-		node[draw] at (-3,0) (quan) {Quantitativa}
-		node[draw] at (3,0) (quali) {Qualitativa}
+		node[draw] at (0,2) (tipo) {Tipo}
+		node[draw, draw=red] at (-3,0) (quan) {Quantitativa}
+		node[draw, draw=blue] at (3,0) (quali) {Qualitativa}
 		[->] (tipo) -- (quan)
 		[->] (tipo) -- (quali);
 	\end{tikzpicture}
@@ -341,17 +341,21 @@ No entanto, ainda temos uma outra classificação das variáveis, relacionada as
 	\begin{tikzpicture}
 		\draw
 		node[draw] at (0,2) (esc) {Escala}
-		node[draw, red] at (-6,0) (men) {Mensuração}
-		node[draw, blue] at (0,0) (pre) {Precisão (da contagem)}
-		node[draw, green] at (4,0) (cat) {Categorização}
-		node[draw, red] at (-9,-2) (int) {Intervalar}
-		node[draw, red] at (-7,-2) (raz) {Razão}
-		node[draw, red] at (-5,-2) (nom) {Nominal}
-		node[draw, red] at (-3,-2) (ord) {Ordinal}
-		node[draw, blue] at (-1,-2) (dis) {Discreta}
-		node[draw, blue] at (1,-2) (con) {Contínua}
-		node[draw, green] at (3,-2) (bin) {Binária}
-		node[draw, green] at (5.3,-2) (pol) {Policotômica}
+		node[draw, draw=yellow] at (-6,0) (men) {Mensuração}
+		node[draw, draw=pink] at (0,0) (pre) {Precisão (da contagem)}
+		node[draw, draw=green] at (4,0) (cat) {Categorização}
+		node[draw, draw=yellow] at (-9,-2) (int) {Intervalar}
+		node[draw, draw=yellow] at (-7,-2) (raz) {Razão}
+		node[draw, draw=yellow] at (-5,-2) (nom) {Nominal}
+		node[draw, draw=yellow] at (-3,-2) (ord) {Ordinal}
+		node[draw, draw=pink] at (-1,-2) (dis) {Discreta}
+		node[draw, draw=pink] at (1,-2) (con) {Contínua}
+		node[draw, draw=green] at (3,-2) (bin) {Binária}
+		node[draw, draw=green] at (5.3,-2) (pol) {Policotômica}
+
+		node[draw, draw=red] at (-3,0) (quan) {Quantitativa}
+		node[draw, draw=blue] at (5,0) (qual) {Qualitativa}
+
 		[->] (esc) -- (men)
 		[->] (esc) -- (pre)
 		[->] (esc) -- (cat)
@@ -374,16 +378,16 @@ No entanto, ainda temos uma outra classificação das variáveis, relacionada as
 	\begin{tikzpicture}
 		\draw
 		node[draw] at (0,2) (tipo) {Variável}
-		node[draw] at (-3,0) (quan) {Quantitativa}
-		node[draw] at (5,0) (qual) {Qualitativa}
-		node[draw, red] at (-6,-2) (int) {Intervalar}
-		node[draw, red] at (-4,-2) (raz) {Razão}
-		node[draw, blue] at (-2.1,-2) (dis) {Discreta}
-		node[draw, blue] at (0,-2) (con) {Continua}
-		node[draw, red] at (4,-2) (nom) {Nominal}
-		node[draw, red] at (2,-2) (ord) {Ordinal}
-		node[draw, green] at (5.8,-2) (bin) {Binaria}
-		node[draw, green] at (8,-2) (pol) {Policotômica}
+		node[draw, draw=red] at (-3,0) (quan) {Quantitativa}
+		node[draw, draw=blue] at (5,0) (qual) {Qualitativa}
+		node[draw, draw=yellow] at (-6,-2) (int) {Intervalar}
+		node[draw, draw=yellow] at (-4,-2) (raz) {Razão}
+		node[draw, draw=pink] at (-2.1,-2) (dis) {Discreta}
+		node[draw, draw=pink] at (0,-2) (con) {Continua}
+		node[draw, draw=yellow] at (4,-2) (nom) {Nominal}
+		node[draw, draw=yellow] at (2,-2) (ord) {Ordinal}
+		node[draw, draw=green] at (5.8,-2) (bin) {Binaria}
+		node[draw, draw=green] at (8,-2) (pol) {Policotômica}
 		[->] (tipo) -- (quan)
 		[->] (tipo) -- (qual)
 		[->] (quan) -- (dis)
@@ -429,11 +433,15 @@ Sabendo que a variável é quantitativa podemos utilizar as medidas estatística
 
 \subsubsection{Escala de precisão: Quantitativa contínua}
 
-A  variável quantitativa, com escala de precisão contínua, é quando ela possui um intervalo de domínio dos números reais. Lembrando que o conjunto de número reais engloba os números inteiros. Geralmente essa variável é o resultado de uma medida, por exemplo, a altura dos estudantes é um dado do tipo quantitativo contínuo.
+A  variável quantitativa pode possuir um intervalo de domínio real ou inteiro. Lembrando que o conjunto de número reais engloba os números inteiros. Geralmente essa variável é o resultado de uma medida, por exemplo, a altura dos estudantes é um dado do tipo quantitativo contínuo.
 
-Vamos criar em Python uma tabela (chamado de DataFrame) que tem uma única coluna (variável) do tipo quantitativa continua. Porém, as linguagens (Python, R) ou as ferramentas estatísticas visuais (tais como: SPSS, JASP ou Jamovi), não são obrigadas a ter um equivalente dessa tipologia teórica, isso depende do contexto do dado, da interpretação humana do que aquela variável representa. No código a seguir criamos uma tabela com uma única coluna. Classificamos então ela em relação a escala de precisão (da contagem) como continua. Em programação o termo variável é utilizado para um fim diferente, porém nesse capítulo, quando falamos de variável estamos nos referindo a coluna da tabela.
+As linguagens que suportam fins estatísticos (Python, R, stata) ou as ferramentas estatísticas visuais (tais como: SPSS, JASP ou Jamovi), não são obrigadas a ter um equivalente dessa tipologia teórica. Isso depende das escolhas dos desenvolvedores e do foco da ferramenta.
 
-\begin{lstlisting}[language=Python, caption={Código que cria e exibe uma tabela em Python. A classificação teórica dessa variável é quantitativa continua.}]
+Python é uma Linguagem de uso diverso, não somente estatístico. Além disso, em programação (Python) o termo variável é utilizado com um significado diferente, porém nesse capítulo, quando falamos de variável estamos nos referindo a coluna da tabela, a característica medida naquela amostra.
+
+Vamos criar em Python uma tabela (chamado de DataFrame) que tem uma única coluna (variável) do tipo quantitativa continua. Classificamos esta coluna teoricamente em relação a escala de precisão (da contagem) como continua. Veja no código a seguir.
+
+\begin{lstlisting}[language=Python, caption={Código que cria e exibe uma tabela em Python com uma coluna. A classificação teórica dessa variável é quantitativa continua.}]
 >>> import pandas as pd
 >>> dados = [1.80, 1.70, 1.50, 1.79]
 >>> df = pd.DataFrame(data=dados, columns=['altura'])
@@ -446,19 +454,19 @@ Vamos criar em Python uma tabela (chamado de DataFrame) que tem uma única colun
 >>>
 \end{lstlisting}
 
-O Jamovi (\url{https://www.jamovi.org/}) é um software estatístico utilizado para realizar análises. No Jamovi é possível criar visualmente o conjunto de dados, durante esse processo você informa para cada variável o \textbf{tipo de dado} e o \textbf{tipo de medida} Figura~\ref{fig:jasp}.
+O Jamovi (\url{https://www.jamovi.org/}) é um software estatístico utilizado para realizar análises. No Jamovi é possível criar visualmente o conjunto de dados. Durante esse processo você informa para cada variável o \textbf{tipo de dado} e o \textbf{tipo de medida} (Figura~\ref{fig:jasp}). As opções do tipo de dado no Jamovi são: inteiro, decimal e texto. Já para o tipo de medida: nominal, ordinal, continua e ID.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{figuras/jasp}
-\caption{Jasp}
+\includegraphics[width=1\linewidth]{figuras/jasp}
+\caption{Jamovi}
 \label{fig:jasp}
 \end{figure}
 
-As opções do tipo de dado no Jamovi, são 3: inteiro, decimal e texto. Já para o tipo de medida são 4: nominal, ordinal, continua e ID.
+
 
 \begin{figure}
-	\caption{Jamovi}
+
 	\centering
 	\begin{tikzpicture}
 		\draw
@@ -473,16 +481,16 @@ As opções do tipo de dado no Jamovi, são 3: inteiro, decimal e texto. Já par
 		node[draw] at (1,-2) (con) {Continua}
 		node[draw] at (-0.7,-2) (bin) {ID}
 
-		node[draw] at (-3,-4) (qual) {Quali}
-		node[draw] at (-5,-4) (quan) {Quanti}
+		node[draw, red] at (-5,-4) (quan) {Quanti}
+		node[draw, blue] at (-3,-4) (qual) {Quali}
 
 		node[draw, red] at (0,-4) (int_) {Intervalar}
 		node[draw, red] at (2,-4) (raz_) {Razão}
-		node[draw, red] at (4,-4) (nom_) {Nominal}
-		node[draw, red] at (6,-4) (ord_) {Ordinal}
+		node[draw, blue] at (4,-4) (nom_) {Nominal}
+		node[draw, blue] at (6,-4) (ord_) {Ordinal}
 
-		node[draw, red] at (3,-6) (men) {Escala de Mensuração}
-		node[draw, red] at (-4,-6) (tipo) {Tipo}
+		node[draw] at (3,-6) (men) {Escala de Mensuração}
+		node[draw] at (-4,-6) (tipo) {Tipo}
 
 		[->] (jamovi) -- (tipd)
 		[->] (jamovi) -- (tipm)
@@ -512,8 +520,13 @@ As opções do tipo de dado no Jamovi, são 3: inteiro, decimal e texto. Já par
 		[->] (qual) -- (int)
 		;
 	\end{tikzpicture}
+	\caption{Jamovi Tipo de dado e tipo de medida (ou mensuração)}
 	\label{fig:jamovi}
 \end{figure}
+
+Na tipologia teórica, uma variável do tipo quantitativa só pode ter uma escala de mensuração entre intervalar e razão, não podendo ser nominal ou ordinal, porque nominal e ordinal estão relacionados a variável qualitativa. Portanto, no Jamovi quando vc escolhe o tipo de dado decimal, automaticamente vc não consegue escolher o tipo de mensuração nominal nem ordinal. Da mesma forma quando vc escolhe o tipo texto (que equivale ao qualitativo) vc não consegue escolher intervalar ou razão, porque são as opções relacionadas a variável quantitativa.
+
+O Jamovi, não tem a distinção entre intervalar e razão, ambas são possíveis no tipo de medida contínua.
 
 \bibliographystyle{apalike}
 \bibliography{ref}
