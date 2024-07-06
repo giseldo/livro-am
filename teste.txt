@@ -1,0 +1,30 @@
+\begin{comment}
+
+\subsubsection{Escala de precisão: Quantitativa discreto}
+
+O dado numérico discreto geralmente é resultado de uma contagem - um número inteiro. Por exemplo, a idade é uma contagem de anos do estudante, logo é um dado do tipo \textbf{numérico discreto}.
+
+Por exemplo, a idade de um estudante é um dado do tipo \textbf{numérico discreto}.
+
+Cada linguagem de programação tem tipos de dados específicos para suas variáveis, que estão relacionados as vezes com essa classificação teórica (numérico contínuo ou numerico discreto). Por exemplo no python temos o tipo da variável \textit{int} (inteiro), que é equivalente ao numerico discreto, já o tipo \textit{float} (flutuante) é equivalente ao numérico contínuo.
+
+Aqui está um exemplo de código em Python:
+
+\begin{lstlisting}[language=Python, caption={Exemplo de declaração de variável do tipo inteiro, equivalente ao tipo de dado numérico contínuo.}]
+	>>> idade = 25
+	>>> type(idade)
+	<class 'int'>
+\end{lstlisting}
+
+\subsection{Dado qualitativo}
+
+Um dado é do tipo categórico quando ele faz parte de um conjunto, de uma classe ou de uma categoria.
+
+O dado categórico pode ser binário ou ordinal, ou nenhuma das duas subcategorias.
+
+Um exemplo de dado categórico, é uma lista com as cores preferidas dos estudantes, ou o estado civil de uma pessoa.
+
+O dado do tipo categórico binário é um tipo especial quando ele somente pode assumir dois valores no universo de valores possíveis. Por exemplo 0 ou 1, existente ou ausente, true ou false, sim e não.
+
+O dado do tipo categórico ordinal também é um tipo especial, é quando ele faz parte de um conjunto com determinada ordem, por exemplo, imagine a classificação de altura de estudantes somente com os valores alto, médio e baixo. Nesse exemplo existe uma ordem, o aluno com altura classificado como baixo tem uma altura menor do que o aluno com altura média.}
+\end{comment}

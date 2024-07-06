@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.25)  4 JUL 2024 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.25)  5 JUL 2024 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -641,11 +641,7 @@ ex.def
 File: l3backend-pdftex.def 2024-04-11 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box65
-) (main.aux
-
-LaTeX Warning: Label `fig:mensuracao' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -764,108 +760,110 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 Cap\'{\i }tulo 1.
 [5]
-<figuras/jhon_macharthy.png, id=82, 379.4175pt x 530.73282pt>
+<figuras/jhon_macharthy.png, id=84, 379.4175pt x 530.73282pt>
 File: figuras/jhon_macharthy.png Graphic file (type png)
 <use figuras/jhon_macharthy.png>
 Package pdftex.def Info: figuras/jhon_macharthy.png  used on input line 129.
 (pdftex.def)             Requested size: 99.2283pt x 138.7971pt.
-<figuras/alan_turing.png, id=84, 268.75406pt x 356.83313pt>
+<figuras/alan_turing.png, id=86, 268.75406pt x 356.83313pt>
 File: figuras/alan_turing.png Graphic file (type png)
 <use figuras/alan_turing.png>
 Package pdftex.def Info: figuras/alan_turing.png  used on input line 136.
 (pdftex.def)             Requested size: 99.2283pt x 131.74849pt.
-<figuras/expert.jpg, id=86, 411.03563pt x 352.31625pt>
+<figuras/expert.jpg, id=88, 411.03563pt x 352.31625pt>
 File: figuras/expert.jpg Graphic file (type jpg)
 <use figuras/expert.jpg>
 Package pdftex.def Info: figuras/expert.jpg  used on input line 148.
 (pdftex.def)             Requested size: 308.71106pt x 264.60747pt.
- [6 <./figuras/jhon_macharthy.png> <./figuras/alan_turing.png>]
-<figuras/ia.png, id=99, 809.0225pt x 279.0425pt>
-File: figuras/ia.png Graphic file (type png)
-<use figuras/ia.png>
-Package pdftex.def Info: figuras/ia.png  used on input line 163.
-(pdftex.def)             Requested size: 396.91325pt x 136.90233pt.
-<figuras/exemplos_am.png, id=101, 843.15pt x 754.31813pt>
+ [6 <./figuras/jhon_macharthy.png> <./figuras/alan_turing.png>] [7 <./figuras/e
+xpert.jpg>]
+<figuras/exemplos_am.png, id=109, 843.15pt x 754.31813pt>
 File: figuras/exemplos_am.png Graphic file (type png)
 <use figuras/exemplos_am.png>
-Package pdftex.def Info: figuras/exemplos_am.png  used on input line 172.
+Package pdftex.def Info: figuras/exemplos_am.png  used on input line 182.
 (pdftex.def)             Requested size: 308.71106pt x 276.19283pt.
- [7 <./figuras/expert.jpg>] [8 <./figuras/ia.png> <./figuras/exemplos_am.png>]
-<figuras/indutivo.png, id=115, 1069.9975pt x 279.0425pt>
-File: figuras/indutivo.png Graphic file (type png)
-<use figuras/indutivo.png>
-Package pdftex.def Info: figuras/indutivo.png  used on input line 183.
-(pdftex.def)             Requested size: 441.01773pt x 115.01277pt.
-
-(C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/03/11 1.10a listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 196.
-
-[9 <./figuras/indutivo.png>] [10]
-Cap\'{\i }tulo 2.
-[11
+ [8 <./figuras/exemplos_am.png>] [9] [10
 
 ]
-Overfull \hbox (4.39256pt too wide) in paragraph at lines 255--256
+Cap\'{\i }tulo 2.
+[11]
+Overfull \hbox (4.39256pt too wide) in paragraph at lines 276--277
 []\OT1/cmr/m/n/12 Neste con-texto, uma vari^^Savel pode ser \OT1/cmr/bx/n/12 qu
 an-ti-ta-tiva \OT1/cmr/m/n/12 ou \OT1/cmr/bx/n/12 qua-li-ta-tiva \OT1/cmr/m/n/1
 2 (Fi-gura [][]2.1[][]).
  []
 
 
-Overfull \hbox (14.89801pt too wide) in paragraph at lines 292--293
+Overfull \hbox (14.89801pt too wide) in paragraph at lines 313--314
 []\OT1/cmr/m/n/12 Para exem-pli-fi-car, ti-pi-fi-ca-re-mos (ou clas-si-fi-ca-re
 -mos) as vari^^Saveis (ou ca-rac-ter^^S^^Psticas)
  []
 
 [12]
-Overfull \hbox (31.93767pt too wide) in paragraph at lines 346--348
+Overfull \hbox (31.93767pt too wide) in paragraph at lines 367--369
  [][] 
  []
 
 
-Overfull \hbox (23.40176pt too wide) in paragraph at lines 378--380
+Overfull \hbox (23.40176pt too wide) in paragraph at lines 397--399
  [][] 
  []
 
-[13] [14] (main.bbl [15] [16
+[13] [14]
+(C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/03/11 1.10a listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 436.
+<figuras/jasp.png, id=162, 963.6pt x 603.75563pt>
+File: figuras/jasp.png Graphic file (type png)
+<use figuras/jasp.png>
+Package pdftex.def Info: figuras/jasp.png  used on input line 453.
+(pdftex.def)             Requested size: 308.71106pt x 193.42685pt.
 
-]) [17] (main.aux)
+(main.bbl [15] [16 <./figuras/jasp.png>]) [17
+
+] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5C28F04BF389F18B92ED932BD81D83E7;1132.
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 5C28F04BF389F18B92ED932BD81D83E7;1132
+(rerunfilecheck)             After:  454E1A939E567089F052BEADA41500E3;939.
  ) 
 Here is how much of TeX's memory you used:
- 24369 strings out of 474369
- 451813 string characters out of 5740986
- 1979754 words of memory out of 5000000
- 46352 multiletter control sequences out of 15000+600000
- 565595 words of font info for 61 fonts, out of 8000000 for 9000
+ 24477 strings out of 474369
+ 453332 string characters out of 5740986
+ 1984754 words of memory out of 5000000
+ 46467 multiletter control sequences out of 15000+600000
+ 565218 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,87p,899b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1
-200.pk> <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm0800.pk><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/gigi/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gigi/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/gigi/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gigi/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (17 pages, 3747462 bytes).
+ 84i,9n,87p,895b,1336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+ <C:\Users\gigi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm080
+0.pk><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/gigi/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gigi/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/gigi/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gigi/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/gigi/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (17 pages, 3741718 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
