@@ -1,0 +1,11 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Inteligência artificial}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Aprendizado de Máquina}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Exemplo}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {4}AM e Python}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Estatística Básica}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Tipo e Escala de Atributos}{17}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Quantitativo}{21}{subsection.6.0.1}%
+\contentsline {subsubsection}{Escala de precisão: Quantitativa contínua}{21}{section*.16}%
+\contentsline {chapter}{\numberline {7}Árvore de decisão}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Regressão Linear}{27}{chapter.8}%
